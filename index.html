@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Log Time</title>
+		<script>
+function calculate() {
+	var startTime = parseInt(document.getElementById('start-time').value + '000');
+	var loadTimeSeconds = (endTime - startTime) / 1000;
+	alert(`Loading took ${loadTimeSeconds} seconds`);
+}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="start-time" placeholder="start time in seconds">
+		<button onclick="calculate();">calculate</button>
+		<script>
+			var endTime = Date.now();
+		</script>
+	</body>
+</html>
+
